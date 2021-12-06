@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>button color</title>
+</head>
+<style >
+	#bcolor{
+		height: 71px;
+		width:141px;
+		border-radius: 55px;
+		margin-top: 320px;
+		margin-left: 839px;	
+		border: 2px;
+		cursor: pointer;
+		text-shadow: lightskyblue;
+	}
+	#bcolor:hover{
+		background-color:lightskyblue ;
+	}
+</style>
+<body>
+	<input type="submit" id="bcolor" value="Click Me" onclick="button1()">
+	<script>
+		
+		function button1()
+		{
+			
+			let b=Math.random()*10000000;
+			let a="#"+Math.floor(b).toString(16);
+			document.body.style.background=a;
+			console.log(a);
+
+		}
+	</script>
+
+</body>
+</html>
