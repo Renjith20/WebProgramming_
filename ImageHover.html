@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ImageClick</title>
+	<style type="text/css">
+		#imgs{
+			height: 349px;
+			width: 550px;
+		}
+		#txt2{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="level">
+		<div id="image1">
+			<img src="spiderman-new_1570918444.jpg"id="imgs">
+		</div>
+		<div>
+			<h3 id="txt1"> SPIDER MAN </h3>
+			<h2 id="txt2"> MINNAL MURALI </h2>
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('level').addEventListener("mouseover", f1);
+		document.getElementById('level').addEventListener("mouseout", f2);
+
+		function f1()
+		{
+			document.getElementById('imgs').src = "minnal.jpg";
+			document.getElementById('txt1').style.display = "none" ;
+			document.getElementById('txt2').style.display = "block";
+		}
+
+		function f2()
+		{
+			document.getElementById('imgs').src = "spiderman-new_1570918444.jpg";
+			document.getElementById('txt1').style.display = "block" ;
+			document.getElementById('txt2').style.display = "none"; 
+		}
+
+
+	</script>
+
+</body>
+</html>
