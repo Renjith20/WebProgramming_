@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name = "form1">
+		<label>Enter the Number:</label>
+		<input type ="text" id="txt"> <br>
+		<input type = "submit" value="Generate" name="txt1" onclick="factorial()">
+    </form>
+    <script type="text/javascript">
+    	function factorial()
+    	{
+    		let num=document.getElementById('txt').value;
+    		console.log(num);
+            var result = num;
+            if (num === 0 || num === 1) 
+              return 1; 
+            while (num > 1) 
+            { 
+             num--;
+             result *= num;}
+             document.write("factorial:",result);
+             return result;
+        
+         event.preventdefault();
+        }
+</script>
+</body>
+</html>
